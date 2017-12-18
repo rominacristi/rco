@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 {% include head.html %}
+
+<!-- For gallery -->
+{% if page.use_gallery %}
+  {% include unite_gallery_script %}
+{% endif %}
+
 <body>
 
   {{ content }}

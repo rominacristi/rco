@@ -18,6 +18,15 @@ use_gallery: true
     {% endif %}
   {% endfor %}
 
-  </div>
+</div>
+
+<script type="text/javascript"> 
+    jQuery(document).ready(function(){ 
+        jQuery("#gallery").unitegallery({
+            gallery_theme: "tiles",
+            tiles_type: "nested"						
+        });
+    });
+</script>
 
 {% include footer.html %}

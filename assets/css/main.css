@@ -3850,7 +3850,7 @@ template {
 body {
   font-family: "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
-  background-color: #262626;
+  background-color: #FFFFFF;
   margin: 0;
 }
 
@@ -3939,7 +3939,7 @@ cite {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #1c1c1c;
+  background-color: #d8d8d8;
   z-index: 1;
 }
 
@@ -4191,7 +4191,7 @@ cite {
 }
 
 .main_footer {
-  background-color: #1c1c1c;
+  background-color: #d8d8d8;
 }
 
 .social_footer {
@@ -4208,7 +4208,7 @@ cite {
 }
 
 .social_footer a {
-  color: #7b7b7b;
+  color: #FFFFFF;
   display: inline-block;
   padding: 0.5rem 1rem;
   margin: 0.3rem 0;
@@ -4216,13 +4216,13 @@ cite {
   font-size: 1.75rem;
   -webkit-border-radius: 0.3rem;
           border-radius: 0.3rem;
-  background-color: #262626;
+  background-color: #a4a4a4;
   -webkit-transition: all .35s ease-in-out;
   transition: all .35s ease-in-out;
 }
 
 .social_footer a:hover {
-  background-color: #c0334a;
+  background-color: #fe642e;
   color: #ffffff;
 }
 
@@ -4240,13 +4240,13 @@ cite {
 
 .copyright a {
   text-decoration: none;
-  color: #c0334a;
+  color: #fe642e;
   -webkit-transition: all .35s ease-in-out;
   transition: all .35s ease-in-out;
 }
 
 .copyright a:hover {
-  color: rgba(192, 51, 74, 0.75);
+  color: rgba(250, 130, 88, 0.75);
 }
 
 .post_wrapper, .entry_content {
@@ -4291,14 +4291,14 @@ cite {
   font-size: 1.1rem;
   margin: 0;
   color: #ffffff;
-  background-color: rgba(210, 84, 105, 0.4);
+  background-color: rgba(250, 130, 88, 0.4);
 }
 
 .post header .post_title {
   padding: 1rem;
   font-size: 2rem;
   margin: 0;
-  background-color: rgba(192, 51, 74, 0.4);
+  background-color: rgba(250, 130, 88, 0.4);
   color: #ffffff;
 }
 
@@ -4483,18 +4483,18 @@ cite {
 #tags .tags li {
   float: left;
   margin: 0 0.5rem 0.5rem 0;
-  border: 1px solid #c0334a;
+  border: 1px solid #fe642e;
   -webkit-border-radius: 0.5rem;
           border-radius: 0.5rem;
   background-color: #d25469;
-  -webkit-box-shadow: 0 2px 0 #c0334a;
-          box-shadow: 0 2px 0 #c0334a;
+  -webkit-box-shadow: 0 2px 0 #fe642e;
+          box-shadow: 0 2px 0 #fe642e;
   -webkit-transition: all .35s;
   transition: all .35s;
 }
 
 #tags .tags li:hover {
-  background-color: rgba(192, 51, 74, 0.75);
+  background-color: rgba(250, 130, 88, 0.75);
 }
 
 #tags .tags a {
@@ -4511,11 +4511,11 @@ cite {
 }
 
 #tags .tag_list a {
-  color: #c0334a;
+  color: #fe642e;
 }
 
 #tags .tag_list a:hover {
-  color: rgba(192, 51, 74, 0.75);
+  color: rgba(250, 130, 88, 0.75);
 }
 
 #tags .back_to_home {
@@ -4594,7 +4594,7 @@ cite {
 }
 
 .about .about_social .social_footer a:hover {
-  color: #c0334a;
+  color: #fe642e;
 }
 
 .contact {

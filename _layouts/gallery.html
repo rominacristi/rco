@@ -10,7 +10,7 @@
   <article class="post">
   <header>
       <div class="post_image">
-        <img src={{ "/assets/img/" | prepend: site.baseurl | append : page.img}} alt="{{page.title}}">
+          <img src={{ site.baseurl }}/assets/img/{{ page.img_folder }}/{{ page.img }} alt="{{page.title}}">
       </div>
   <div class="post_description">
     <h1 class="post_title">{{page.title}}</h1>

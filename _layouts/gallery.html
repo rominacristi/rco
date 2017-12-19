@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+<body>
+
+{% include header.html %}
+
+<main class="post_content">
+  <article class="post">
+  <header>
+      <div class="post_image">
+        <img src={{ "/assets/img/" | prepend: site.baseurl | append : page.img}} alt="{{page.title}}">
+      </div>
+  <div class="post_description">
+    <h1 class="post_title">{{page.title}}</h1>
+  </div>
+  </header>
+  </article>
+
+<div id="gallery" style="display:none;">
+
+  {% for image in site.static_files %}
+    {% capture path %}{{ "/assets/img/" | append : page.img_folder }}{% endcapture %}
+    {% if image.path contains path %}
+      <img alt="Image"
+       src="{{ site.path }}{{ image.path }}"
+       data-image="{{ site.path }}{{ image.path }}"
+       data-description="">
+    {% endif %}
+  {% endfor %}
+</div>
+
+
+</main> <!-- End Section Post Content -->
+
+<script type="text/javascript"> 
+    jQuery(document).ready(function(){ 
+        jQuery("#gallery").unitegallery({
+            gallery_theme: "tiles",
+            tiles_type: "nested"						
+        });
+    });
+</script>
+
+{% include footer.html %}
+
+  {% include arrow_top.html %}
+
+  {% unless page.use_gallery %}
+    {% include javascripts.html %}
+  {% endunless %}
+
+  {% include analytics.html %}
+
+</body>
+
+</html>

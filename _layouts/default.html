@@ -7,7 +7,11 @@
   {{ content }}
 
   {% include arrow_top.html %}
-  {% include javascripts.html %}
+
+  {% unless page.use_gallery %}
+    {% include javascripts.html %}
+  {% endunless %}
+
   {% include analytics.html %}
 </body>
 </html>

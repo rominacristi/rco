@@ -1,32 +1,8 @@
 ---
-layout: default
+layout: gallery
 title: Miniature Watercolours
 permalink: /miniature_watercolours/
 use_gallery: true
+img: alaska.jpg
+img_folder: miniature_watercolours
 ---
- 
-{% include header.html %}
-
-<div id="gallery" style="display:none;">
-
-  {% for image in site.static_files %}
-    {% if image.path contains 'assets/img' %}
-        <img alt="Image"
-         src="{{ site.path }}{{ image.path }}"
-         data-image="{{ site.path }}{{ image.path }}"
-         data-description="Image description">
-    {% endif %}
-  {% endfor %}
-
-</div>
-
-<script type="text/javascript"> 
-    jQuery(document).ready(function(){ 
-        jQuery("#gallery").unitegallery({
-            gallery_theme: "tiles",
-            tiles_type: "nested"						
-        });
-    });
-</script>
-
-{% include footer.html %}

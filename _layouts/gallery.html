@@ -23,10 +23,12 @@
   {% for image in site.static_files %}
     {% capture path %}{{ "/assets/img/" | append : page.img_folder }}{% endcapture %}
     {% if image.path contains path %}
-      <img alt="Image"
-       src="{{ site.path }}{{ image.path }}"
-       data-image="{{ site.path }}{{ image.path }}"
-       data-description="">
+      {% unless image.path contains '-th.' %}
+        <img alt="Image"
+         src="{{ site.path }}{{ image.path | remove: image.name }}thumbs/{{ image.basename | append: '-th' | append: image.extname }}"
+         data-image="{{ site.path }}{{ image.path }}"
+         data-description="">
+      {% endunless %}
     {% endif %}
   {% endfor %}
 </div>

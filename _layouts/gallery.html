@@ -18,21 +18,24 @@
   </header>
   </article>
 
-<div id="gallery" style="display:none;">
+  <div class="entry_content">
+    {{page.content | markdownify}}
+  </div>
 
-  {% for image in site.static_files %}
-    {% capture path %}{{ "/assets/img/" | append : page.img_folder }}{% endcapture %}
-    {% if image.path contains path %}
-      {% unless image.path contains '-th.' %}
-        <img alt="Image"
-         src="{{ site.path }}{{ image.path | remove: image.name }}thumbs/{{ image.basename | append: '-th' | append: image.extname }}"
-         data-image="{{ site.path }}{{ image.path }}"
-         data-description="">
-      {% endunless %}
-    {% endif %}
-  {% endfor %}
-</div>
-
+  <div id="gallery" style="display:none;">
+  
+    {% for image in site.static_files %}
+      {% capture path %}{{ "/assets/img/" | append : page.img_folder }}{% endcapture %}
+      {% if image.path contains path %}
+        {% unless image.path contains '-th.' %}
+          <img alt="Image"
+           src="{{ site.path }}{{ image.path | remove: image.name }}thumbs/{{ image.basename | append: '-th' | append: image.extname }}"
+           data-image="{{ site.path }}{{ image.path }}"
+           data-description="">
+        {% endunless %}
+      {% endif %}
+    {% endfor %}
+  </div>
 
 </main> <!-- End Section Post Content -->
 
@@ -47,13 +50,13 @@
 
 {% include footer.html %}
 
-  {% include arrow_top.html %}
+{% include arrow_top.html %}
 
-  {% unless page.use_gallery %}
-    {% include javascripts.html %}
-  {% endunless %}
+{% unless page.use_gallery %}
+  {% include javascripts.html %}
+{% endunless %}
 
-  {% include analytics.html %}
+{% include analytics.html %}
 
 </body>
 

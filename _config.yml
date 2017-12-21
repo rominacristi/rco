@@ -15,23 +15,23 @@ banner-desc: (under development) # add banner description
 author-pic: face.jpg # your photo
 author-name: Romina Cristi Olate # your name
 about-author: # about author
-email: your-email@domain.com # your email
+email: rco.space@gmail.com # your email
 phone: # your pnone number
 website: http://rco.space # you website
 
 # Social link
-google_url:    # add url link
-twitter_url:   # add url link 
-instagram_url: # add url link
-pinterest_url: # add url link
-dribbble_url:  # add url link
-facebook_url:  # add url link
+# google_url:    # add url link
+twitter_url: https://twitter.com/romini_co # add url link 
+instagram_url: https://www.instagram.com/rco.space/ # add url link
+pinterest_url: https://twitter.com/romini_co # add url link
+# dribbble_url:  # add url link
+facebook_url: https://www.facebook.com/rco.watercolours # add url link
 
 # Disqus
-discus_identifier: mr-brown # add your discus identifier
+# discus_identifier: mr-brown # add your discus identifier
 
 # Newsletter
-mailchimp: # add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
+# mailchimp: # add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
 
 # Tracker
 analytics:

@@ -50,4 +50,5 @@ include: [_pages]
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
 
 collections:
-  - sketchbooks
+  sketchbooks:
+    output: true

@@ -2,26 +2,18 @@
 layout: main
 ---
 
-<div class="chapter">
+{% for page in site.sections reversed %}
+  <div class="chapter">
+  
+  {% capture img_base_folder %}{% if page.img_base_folder %}{{page.img_base_folder}}{% else %}{{"/assets/img/"}}{% endif %}{% endcapture %}
+  <a href="{{site.baseurl | append : page.permalink }}">
+    <img src={{ img_base_folder | prepend: site.baseurl | append : page.img }} alt="{{post.title}}">
+  </a>
+  
+  <div class="chapter_inner">
+    <h3 class="chapter_title">{{ page.title }}</h3>
+  </div>
+  
+  </div>
 
-<a href="{{site.baseurl}}/miniature_watercolours/">
-  <img src={{ "/assets/img/baner_miniature_watercolours.jpeg" | prepend: site.baseurl }} alt="{{post.title}}">
-</a>
-
-<div class="chapter_inner">
-  <h3 class="chapter_title">Miniature Watercolours</h3>
-</div>
-
-</div>
-
-<div class="chapter">
-
-<a href="{{site.baseurl}}/weaving_routes/">
-  <img src={{ "/assets/img/baner_weaving_routes.jpeg" | prepend: site.baseurl }} alt="{{post.title}}">
-</a>
-
-<div class="chapter_inner">
-  <h3 class="chapter_title">Weaving Routes</h3>
-</div>
-
-</div>
+{% endfor %}

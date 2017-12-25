@@ -6,17 +6,21 @@
 
 {% include header.html %}
 
+{% capture img_base_folder %}{% if page.img_base_folder %}{{page.img_base_folder}}{% else %}{{"/assets/img/"}}{% endif %}{% endcapture %}
+
 <main class="post_content">
+  {% unless page.no_baner %}
   <article class="post">
   <header>
       <div class="post_image">
-          <img src={{ site.baseurl }}/assets/img/{{ page.img }} alt="{{page.title}}">
+          <img src={{ site.baseurl }}{{ img_base_folder }}{{ page.img }} alt="{{page.title}}">
       </div>
   <div class="post_description">
     <h1 class="post_title">{{page.title}}</h1>
   </div>
   </header>
   </article>
+  {% endunless %}
 
   <div class="entry_content">
     {{page.content | markdownify}}
@@ -25,7 +29,7 @@
   <div id="gallery" style="display:none;">
   
     {% for image in site.static_files %}
-      {% capture path %}{{ "/assets/img/" | append : page.img_folder }}{% endcapture %}
+      {% capture path %}{{ img_base_folder | append : page.imgs_folder }}{% endcapture %}
       {% if image.path contains path %}
         {% unless image.path contains '-th.' %}
           <img alt="Image"

@@ -4222,7 +4222,7 @@ cite {
 }
 
 .social_footer a:hover {
-  background-color: #fe642e;
+  background-color: rgba(215, 66, 78, 1.0);
   color: #ffffff;
 }
 
@@ -4240,13 +4240,13 @@ cite {
 
 .copyright a {
   text-decoration: none;
-  color: #fe642e;
+  color: rgba(215, 66, 78, 1.0);
   -webkit-transition: all .35s ease-in-out;
   transition: all .35s ease-in-out;
 }
 
 .copyright a:hover {
-  color: rgba(250, 130, 88, 0.75);
+  color: rgba(215, 66, 78, 0.75);
 }
 
 .post_wrapper, .entry_content {
@@ -4298,14 +4298,14 @@ cite {
   font-size: 1.1rem;
   margin: 0;
   color: #ffffff;
-  background-color: rgba(250, 130, 88, 0.4);
+  background-color: rgba(215, 66, 78, 0.4);
 }
 
 .post header .post_title {
   padding: 1rem;
   font-size: 2rem;
   margin: 0;
-  background-color: rgba(250, 130, 88, 0.4);
+  background-color: rgba(215, 66, 78, 0.4);
   color: #ffffff;
 }
 
@@ -4490,18 +4490,18 @@ cite {
 #tags .tags li {
   float: left;
   margin: 0 0.5rem 0.5rem 0;
-  border: 1px solid #fe642e;
+  border: 1px solid rgba(215, 66, 78, 1.0);
   -webkit-border-radius: 0.5rem;
           border-radius: 0.5rem;
   background-color: #d25469;
-  -webkit-box-shadow: 0 2px 0 #fe642e;
-          box-shadow: 0 2px 0 #fe642e;
+  -webkit-box-shadow: 0 2px 0 rgba(215, 66, 78, 1.0);
+          box-shadow: 0 2px 0 rgba(215, 66, 78, 1.0);
   -webkit-transition: all .35s;
   transition: all .35s;
 }
 
 #tags .tags li:hover {
-  background-color: rgba(250, 130, 88, 0.75);
+  background-color: rgba(215, 66, 78, 0.75);
 }
 
 #tags .tags a {
@@ -4518,11 +4518,11 @@ cite {
 }
 
 #tags .tag_list a {
-  color: #fe642e;
+  color: rgba(215, 66, 78, 1.0);
 }
 
 #tags .tag_list a:hover {
-  color: rgba(250, 130, 88, 0.75);
+  color: rgba(215, 66, 78, 0.75);
 }
 
 #tags .back_to_home {
@@ -4601,7 +4601,7 @@ cite {
 }
 
 .about .about_social .social_footer a:hover {
-  color: #fe642e;
+  color: rgba(215, 66, 78, 1.0);
 }
 
 .contact {

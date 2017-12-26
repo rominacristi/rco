@@ -1,0 +1,55 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+
+<main class="post_content" aria-label="Content">
+
+  {% capture img_base_folder %}{% if page.img_base_folder %}{{page.img_base_folder}}{% else %}{{"/assets/img/"}}{% endif %}{% endcapture %}
+  <article class="post">
+  <header>
+      <div class="post_image">
+          <img src={{ site.baseurl }}{{ img_base_folder | append : page.img }} alt="{{page.title}}">
+      </div>
+  <div class="post_description">
+    <h1 class="post_title">{{page.title}}</h1>
+  </div>
+  </header>
+  </article>
+
+<section class="chapters cf">
+  <div class="wrapper">
+
+  <div class="blog_wrapper">
+    {{page.content | markdownify}}
+  </div>
+
+  {% for p in site.categories[page.this_category] %}
+  {% capture img_base_folder %}{% if p.img_base_folder %}{{p.img_base_folder}}{% else %}{{"/assets/img/"}}{% endif %}{% endcapture %}
+    <div class="chapter">
+    
+    <a href="{{ p.url | prepend: site.baseurl }}">
+      <img src={{ img_base_folder | prepend: site.baseurl | append : p.img }} alt="{{p.title}}">
+    </a>
+    
+    <div class="chapter_inner">
+      {% if p.date %} <p class="chapter_number">{{ p.date | date: '%Y, %b %d' }}</p>{% endif %}
+      <h3 class="chapter_title">{{ p.title }}</h3>
+    </div>
+    
+    </div>
+
+  {% endfor %}
+
+  </div>
+</section>
+</main>
+
+{% comment }
+{% include newsletter.html %}
+{% endcomment }
+
+{% include pagination.html %}
+{% include footer.html %}

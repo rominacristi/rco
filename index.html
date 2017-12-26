@@ -2,16 +2,16 @@
 layout: main
 ---
 
-{% for page in site.sections reversed %}
+{% for p in site.sections reversed %}
   <div class="chapter">
   
-  {% capture img_base_folder %}{% if page.img_base_folder %}{{page.img_base_folder}}{% else %}{{"/assets/img/"}}{% endif %}{% endcapture %}
-  <a href="{{site.baseurl | append : page.permalink }}">
-    <img src={{ img_base_folder | prepend: site.baseurl | append : page.img }} alt="{{post.title}}">
+  {% capture img_base_folder %}{% if p.img_base_folder %}{{p.img_base_folder}}{% else %}{{"/assets/img/"}}{% endif %}{% endcapture %}
+  <a href="{{site.baseurl | append : p.permalink }}">
+    <img src={{ img_base_folder | prepend: site.baseurl | append : p.img }} alt="{{post.title}}">
   </a>
   
   <div class="chapter_inner">
-    <h3 class="chapter_title">{{ page.title }}</h3>
+    <h3 class="chapter_title">{{ p.title }}</h3>
   </div>
   
   </div>

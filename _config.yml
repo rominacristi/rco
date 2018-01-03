@@ -51,6 +51,6 @@ exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
 
 collections:
   sketchbooks:
-    output: true
+    output: false
   sections:
     output: true

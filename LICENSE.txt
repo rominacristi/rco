@@ -1,4 +1,15 @@
-                    GNU GENERAL PUBLIC LICENSE
+All media material and content of this respository and website
+is Licensed under the:
+
+Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Public License
+
+https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+---
+
+The blog template is licensed under the: 
+
+                     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
  Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>

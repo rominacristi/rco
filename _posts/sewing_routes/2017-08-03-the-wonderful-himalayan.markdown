@@ -22,6 +22,9 @@ fingerstache offal affogato. Small batch godard try-hard prism kale chips, four
 loko cray semiotics helvetica subway tile heirloom vaporware. Venmo VHS keytar
 succulents chambray.
 
+{% include image name="wr_test.jpg" caption="weaving" %}
+
 > Brunch hella poutine authentic farm-to-table. Stumptown craft beer lomo,
 > heirloom single-origin coffee synth PBR&B post-ironic. <cite>- Lorem
 > Ipsum</cite>
+

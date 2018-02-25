@@ -3,8 +3,8 @@ title: RCO Art
 description: > # this means to ignore newlines until "baseurl:"
   Art projects webpage.
 permalink: ':categories/:title/'
-# baseurl: "/" # the subpath of your site, e.g. /blog
-# url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Banner settings
 video: home6.jpg # add banner video. Add your video file to the folder video

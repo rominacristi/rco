@@ -35,7 +35,7 @@ layout: default
     </a>
     
     <div class="chapter_inner">
-      {% if p.date %} <p class="chapter_number">{{ p.date | date: '%Y, %b %d' }}</p>{% endif %}
+      {% unless p.no_date %} <p class="chapter_number">{{ p.date | date: '%Y, %b %d' }}</p>{% endunless %}
       <h3 class="chapter_title">{{ p.title }}</h3>
     </div>
     

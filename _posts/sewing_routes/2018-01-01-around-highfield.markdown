@@ -1,12 +1,14 @@
 ---
-layout: post
-title: "My first trip: The wonderful Himalayan"
+layout: post_sewing_routes
+title: "Around Highfield"
 img_base_folder: /assets/img/sewing_routes/
+imgs_folder: around_highfield/
 img: wr_test.jpg
-date: 2017-07-03 12:55:00 +0300
-description: You’ll find this post in your `_posts` directory.
-tag: [Travel, Blogging, Mountains]
+description: Highfield route
+tag: [maps]
 category: sewing_routes
+use_gallery: true
+no_date: true
 ---
 
 Sriracha gochujang before they sold out, photo booth trust fund raw denim

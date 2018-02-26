@@ -7,27 +7,26 @@ layout: default
 <main class="post_content">
   <article class="post">
     <div class="entry_content" style="margin-top: -5rem">
+
       <h1 class="post_title">{{page.title}}</h1>
-    </div>
 
-    <div id="gallery" style="display:none;">
-      {% for image in site.static_files %}
-        {% capture path %}{{ img_base_folder | append : page.imgs_folder }}{% endcapture %}
-        {% if image.path contains path %}
-          {% unless image.path contains '-th.' %}
-            <img alt="Image"
-             src="{{ site.path }}{{ image.path | remove: image.name }}thumbs/{{ image.basename | append: '-th' | append: image.extname }}"
-             data-image="{{ site.path }}{{ image.path }}"
-             data-description="">
-          {% endunless %}
-        {% endif %}
-      {% endfor %}
-    </div>
+      <div id="gallery" style="display:none;">
+        {% for image in site.static_files %}
+          {% capture path %}{{ img_base_folder | append : page.imgs_folder }}{% endcapture %}
+          {% if image.path contains path %}
+            {% unless image.path contains '-th.' %}
+              <img alt="Image"
+               src="{{ site.path }}{{ image.path | remove: image.name }}thumbs/{{ image.basename | append: '-th' | append: image.extname }}"
+               data-image="{{ site.path }}{{ image.path }}"
+               data-description="">
+            {% endunless %}
+          {% endif %}
+        {% endfor %}
+      </div>
 
-    <div class="entry_content">
-        <div style="width=100%; text-align: center; letter-spacing: 1rem; margin: 2rem auto 2rem; font-size: 3rem;">
-            <a href="{{ site.path }}{{ page.process }}" style="text-decoration:none; color: black">PROCESS</a>
-        </div>
+      <div style="width=100%; text-align: center; letter-spacing: 1rem; margin: 2rem auto 2rem; font-size: 3rem;">
+          <a href="{{ site.path }}{{ page.process }}" style="text-decoration:none; color: black">PROCESS</a>
+      </div>
     </div>
 
   </article>

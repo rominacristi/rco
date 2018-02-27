@@ -3,6 +3,7 @@ layout: main
 ---
 
 {% for p in site.sections reversed %}
+{% unless p.this_category contains 'process' %}
   <div class="chapter">
   
   {% capture img_base_folder %}{% if p.img_base_folder %}{{p.img_base_folder}}{% else %}{{"/assets/img/"}}{% endif %}{% endcapture %}
@@ -16,4 +17,5 @@ layout: main
   
   </div>
 
+{% endunless %}
 {% endfor %}

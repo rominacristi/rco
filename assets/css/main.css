@@ -4917,3 +4917,24 @@ cite {
     font-size: 1.2rem;
   }
 }
+
+/* PROCESS */
+.process_word {
+  width:100%;
+  text-align: center;
+}
+
+.process_word a {
+  letter-spacing: 1rem;
+  margin: 2rem auto 2rem;
+  font-size: 3rem;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; 
+  cursor: pointer
+}
+
+.process_word a:hover {
+  letter-spacing: 2rem; 
+}
